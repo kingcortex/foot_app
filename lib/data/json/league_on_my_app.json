@@ -1,0 +1,39 @@
+[
+    {
+        "id": 39,
+        "name": "Premier League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/39.png"
+    },
+    {
+        "id": 2,
+        "name": "UEFA Champions League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/2.png"
+    },
+    {
+        "id": 61,
+        "name": "Ligue 1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/61.png"
+    },
+    {
+        "id": 140,
+        "name": "La Liga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/140.png"
+    },
+    {
+        "id": 866,
+        "name": "MLS All-Star",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/866.png"
+    },
+
+    {
+        "id": 78,
+        "name": "Bundesliga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/78.png"
+    }
+]
