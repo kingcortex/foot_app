@@ -59,7 +59,7 @@ class MatchScreenController extends GetxController {
   List number = [1, 3, 5];
   
 
-  Future<void> getFixtures_() async {
+  Future<void> getFixtures() async {
     loagingMatch.value = LoagingMatch.loading;
     fixtures = await _apiRepository.getFixtures(parameter: params);
 
@@ -68,7 +68,7 @@ class MatchScreenController extends GetxController {
     //print(fixtures.length);
   }
 
-  Future<void> getFixtures() async {
+  Future<void> getFixtures_() async {
     await Future.delayed(const Duration(seconds: 3));
     final String response =
         await rootBundle.loadString('lib/data/json/fixtures_test.json');

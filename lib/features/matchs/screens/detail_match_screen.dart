@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:football_app/features/matchs/controllers/detail_match_screen_controller.dart';
 import 'package:football_app/utils/device/device_utility.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../common/widgets/buttons/circle_button.dart';
 import '../../../utils/helpers/helper_function.dart';
 import '../widget/match_detail_card.dart';
 
-class DetailMatchsScreen extends StatelessWidget {
-  const DetailMatchsScreen({super.key});
+class DetailMatchsPage extends StatelessWidget {
+  const DetailMatchsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

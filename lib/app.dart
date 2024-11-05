@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:football_app/router/route.dart';
 import 'package:get/get.dart';
 
 import 'features/matchs/screens/matchs_sreen.dart';
@@ -12,16 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      initialRoute: RoutesClass.home,
+      getPages: RoutesClass.routes,
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const MainApp(),
+      home: const HomePage(),
     );
   }
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

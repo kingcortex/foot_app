@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_app/features/matchs/model/fixtures.dart';
 import 'package:football_app/features/matchs/screens/detail_match_screen.dart';
+import 'package:football_app/router/route.dart';
 import 'package:football_app/utils/extentions/gap.dart';
 import 'package:football_app/utils/formater/formater_date.dart';
 import 'package:get/get.dart';
@@ -22,7 +23,7 @@ class _MatchCardState extends State<MatchCard> {
   Widget build(BuildContext context) {
     return ZoomTapAnimation(
       onTap: () =>
-          Get.to(()=> const DetailMatchsScreen(), arguments: widget.fixtures),
+          Get.toNamed(RoutesClass.detailMatch, arguments: widget.fixtures),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 25),
         height: 140,

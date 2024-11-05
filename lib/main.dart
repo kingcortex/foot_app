@@ -7,7 +7,6 @@ import 'features/matchs/controllers/match_screen_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   Get.put(ApiRepository());
   final controller = Get.put(MatchScreenController());
   controller.getFixtures();
